@@ -1,7 +1,7 @@
 package ru.itsjava.hw7;
 
 public class Rectangle extends Shape {
-    int a, b;
+    private int a, b;
 
     public Rectangle(int a, int b) {
         this.a = a;
@@ -15,7 +15,7 @@ public class Rectangle extends Shape {
     }
 
     public double getPerimeter() {
-        double p = 2*a + 2*b ;
+        double p = 2 * a + 2 * b;
         return p;
     }
 }

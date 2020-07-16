@@ -6,27 +6,7 @@ public class Person {
     private boolean isMale;
 
 
-
-    public void printAge(){
-        int nage;
-        if (this.isMale==true){
-            nage=this.age;
-        } else{
-            if (this.age>18){
-                nage=18;
-            } else{
-                nage=this.age;
-            }
-        }
-
-        System.out.println("My name is "+this.name+" I am "+nage+" years old.");
-    }
-
-
-
-
-    public Person(){
-
+    public Person() {
     }
 
     public Person(int age, String name) {
@@ -34,7 +14,7 @@ public class Person {
         this.name = name;
     }
 
-    public   Person(int age, String name, boolean isMale) {
+    public Person(int age, String name, boolean isMale) {
         this.age = age;
         this.name = name;
         this.isMale = isMale;
@@ -63,4 +43,22 @@ public class Person {
     public void setMale(boolean male) {
         isMale = male;
     }
+
+    public void printAge() {
+        int nage;
+        if (this.isMale == true) {
+            nage = this.age;
+        } else {
+            if (this.age > 18) {
+                nage = 18;
+            } else {
+                nage = this.age;
+            }
+        }
+
+        System.out.println("My name is " + this.name + " I am " + nage + " years old.");
+    }
+
+
 }
+
